@@ -47,6 +47,12 @@ public class numbers {
             if (flag==0)
                 System.out.println(a + " is a prime number");
             }
+        case 4:
+            System.out.println("Enter a number: ");
+            a= sc.nextInt();
+            if(a%2==0)
+                System.out.println(a+ " is an even number");
+            else System.out.println(a+ " is not an even number");
         }
     }
 }
