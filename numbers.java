@@ -18,6 +18,19 @@ public class numbers {
             else if (b>a && b>c )
                 System.out.println(b+ " is larger");
             else System.out.println(c+ " is larger");
+            break;
+        case 2:
+            System.out.println("Enter 3 numbers: ");
+            a= sc.nextInt();
+            b= sc.nextInt();
+            c= sc.nextInt();
+            if (a<b && a<c)
+                System.out.println(a+" is smaller");
+            else if (b<a && b<c )
+                System.out.println(b+ " is smaller");
+            else System.out.println(c+ " is smaller");
+            break;
+
     }
     }
 
