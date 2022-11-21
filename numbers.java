@@ -4,7 +4,7 @@ public class numbers {
     public static void main(String[] args) {
         Scanner sc= new Scanner(System.in);
         int a,b,c,choice,i,flag=0,k,j,r,s=0;
-        System.out.println("Enter 1-Largest of 3 numbers \n 2-Smallest of 3 numbers \n 3-Prime or not\n 4-Even or not\n 5-Reverse of a number\n6-Exit\n Enter your choice: ");
+        System.out.println("Enter 1-To find largest of 3 numbers \n 2-To find smallest of 3 numbers \n 3-Prime or not\n 4-Even or not\n 5-Reverse of a number\n6-Exit\n Enter your choice: ");
     choice=sc.nextInt();
     switch (choice) {
         case 1:
@@ -47,12 +47,14 @@ public class numbers {
             if (flag==0)
                 System.out.println(a + " is a prime number");
             }
+            break;
         case 4:
             System.out.println("Enter a number: ");
             a= sc.nextInt();
             if(a%2==0)
                 System.out.println(a+ " is an even number");
             else System.out.println(a+ " is not an even number");
+            break;
         case 5:
             System.out.println("Enter a number: ");
             a= sc.nextInt();
@@ -64,6 +66,8 @@ public class numbers {
                 j=j/10;
             }
             System.out.println("Reverse of "+a+"is: "+s);
+            break;
+        case 5: System.exit(0);
         }
     }
 }
